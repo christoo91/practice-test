@@ -1,0 +1,127 @@
+body {
+  background-color: #F2F2F2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+body .container {
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  max-width: 1440px;
+}
+
+body .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+
+body .column .card {
+  font-family: "Gothic A1",Helvetica, sans-serif;
+  color: #000000;
+  padding: 57px 115px 62px 165px;
+}
+
+body .column .card__name {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.15em;
+}
+
+body .column .card__description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding-top: 28px;
+}
+
+body .column .card__sub_name {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.28em;
+  text-align: center;
+  color: #111111;
+  padding-top: 60px;
+}
+
+body .column .card__footnote {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.43em;
+  max-width: 190px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+body .column .photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+body .column .photo__wrapper {
+  padding: 20px 165px 15px 0;
+}
+
+body .column .photo__img {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  body .container {
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    max-width: 720px;
+  }
+  body .container .column .card {
+    padding: 50px 40px;
+  }
+  body .container .column .card__sub_name {
+    padding-top: 30px;
+  }
+  body .container .column .photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container .column .photo__wrapper {
+    padding: 20px 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  body .column .card {
+    padding: 40px 15px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, figure, body {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=custom.css.map */

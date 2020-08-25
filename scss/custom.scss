@@ -1,0 +1,146 @@
+body {
+    background-color: #F2F2F2;
+    // display: flex;
+    align-items: center;
+    height: 100vh;
+
+
+    .container {
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        max-width: 1440px;
+
+      }
+
+      .row { 
+        display:flex;
+        flex-wrap: wrap;
+      }
+      
+      .column {
+        flex: 0 0 50%;
+        max-width: 50%;
+
+        .card{
+            font-family: "Gothic A1",Helvetica, sans-serif;
+            color: #000000;
+            padding: 57px 115px 62px 165px;
+
+            &__name{
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 1.15em;
+            }
+
+            &__description{
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 1.5em;
+                padding-top: 28px;
+            }
+
+            &__sub_name{
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 1.28em;
+                text-align: center;
+                color: #111111;
+                padding-top: 60px;
+            }
+
+            &__footnote{
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 1.43em;
+                max-width: 190px;
+                text-align: center;
+                margin: 0 auto;
+                padding-top: 15px;
+
+            }
+        }
+
+        .photo{
+            display: flex;
+            align-items: center;
+            height: 100%;
+        
+            &__wrapper{
+                padding: 20px 165px 15px 0;
+            }
+
+            &__img{
+                width: 100%;
+            }
+        }
+        
+        
+      }
+    
+  }
+
+
+
+  @media screen and (max-width: 992px) {
+
+    body{ 
+
+        .container {
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            max-width: 720px;
+      
+
+     .column {
+
+        .card{
+            padding: 50px 40px;
+
+            &__sub_name{
+
+                padding-top: 30px;
+            }
+        }
+
+        .photo{
+            display: flex;
+            justify-content: center;
+
+            &__wrapper{
+                padding: 20px 15px;
+            }
+        }
+       
+    }
+}
+}
+  }
+  
+  
+
+
+  
+  @media screen and (max-width: 768px) {
+
+    body{ 
+
+     .column {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        .card{
+            padding: 40px 15px;
+        }
+       
+    }
+}
+  }
+  
+
+//   RESET STYLE
+
+h1, h2, h3, h4, h5, h6, p, figure, body{
+    margin: 0;
+    padding: 0;
+}
+
